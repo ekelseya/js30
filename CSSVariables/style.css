@@ -1,0 +1,150 @@
+:root {
+    --base: #00b8be;
+    --spacing: 10px;
+    --blur: 10px;
+    --background: #16161D;
+}
+
+img {
+    width: 50%;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+.hl {
+    color: var(--base);
+}
+
+/*
+  misc styles, nothing to do with CSS variables
+*/
+
+body {
+  text-align: center;
+  background: var(--background);
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.controls {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls--group {
+    display: inline;
+}
+
+input {
+    width: 8rem;
+    height: 2rem;
+}
+
+input[type=range] {
+    height: 38px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 60%;
+    background-color: -internal-light-dark(var(--background), var(--base));
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 60%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: var(--base);
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: var(--base);
+  }
+
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+    background: var(--base);
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+  }
+
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  input[type=range]::-ms-fill-lower {
+    background: var(--base);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+
+  input[type=range]::-ms-fill-upper {
+    background: var(--base);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+  }
+
+  input[type=range]:focus::-ms-fill-lower {
+    background: var(--base);
+  }
+
+  input[type=range]:focus::-ms-fill-upper {
+    background: var(--base);
+  }
